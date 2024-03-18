@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #444;
+    margin: 0rem;
+    overflow: hidden;
+    font-family: 'EB Garamond';
+    overflow-y: scroll;
+  }
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  .image {
+    width: 50vmin;
+    height: 76vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    transition-duration: 0.5s;
+  }
+  .image:hover{
+    transform: scale(110%);
+    transition-duration: 1.5s;
+  }
+  figure{
+    text-align: center;
+  }
+  figcaption{
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  figcaption:hover{
+    cursor: pointer;
+    color: #777;
+    transition-duration: 0.5s;
+  }
+  nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+  }
+  .hank{
+    font-size: 50px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 50px;
+  }
+  .hank:hover{
+    color: #777;
+    transition-duration: 0.5s;
+  }
+  .nav-item{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    position: relative;
+    left: 80%;
+    top: 10%;
+    font-size: 30px;
+    user-select: none;
+  }
+  .nav-item:hover{
+    color: #777;
+  }
+  .a{
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    color: black;
+  }
+  .info{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #ccc;
+    font-size: 22px;
+  }
+  .year{
+    position: absolute;
+    left: 50%;
+    font-size:40px;
+  }
+  .copyright{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size:20px;
+    font-style: italic;
+  }
+  
+  
